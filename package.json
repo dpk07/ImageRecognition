@@ -1,7 +1,7 @@
 {
-  "name": "cra-diy",
+  "name": "imagerecognition",
   "version": "1.0.0",
-  "description": "Boilerplate for react",
+  "description": "react code for Image recognition",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
@@ -12,6 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "babel-loader": "^8.0.6",
+    "bootstrap": "^4.3.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
@@ -19,6 +20,7 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "css-loader": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.35.0",
     "webpack-cli": "^3.3.5",
