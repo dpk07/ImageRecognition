@@ -18,7 +18,7 @@ const canvas = createCanvas(width, height);
 const ctx = canvas.getContext("2d");
 const img = new Image();
 
-//default path to render webpage
+//default path to render react webpage
 app.get("/", (req, res) => res.redirect("/index.html"));
 
 cocoSsd
@@ -76,4 +76,4 @@ cocoSsd
       });
     });
   })
-  .catch(err => console.error("Error while predicting", err));
+  .catch(err => res.status(400).send(error));

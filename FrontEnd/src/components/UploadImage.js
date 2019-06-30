@@ -15,6 +15,11 @@ export default class UploadImage extends Component {
     };
   }
 
+  /**
+   * Sets the selected file in the state
+   * and updates the state with latest data
+   * @param {event object} e
+   */
   handleChange(e) {
     const file = e.target.files[0];
 
@@ -47,6 +52,11 @@ export default class UploadImage extends Component {
     }
   }
 
+  /**
+   * Hits the API for prediction and on success
+   * updates the state with appropriate data
+   * @param {event object} e
+   */
   handleSubmit(e) {
     e.preventDefault();
     this.setState({ isUploaded: true });
@@ -106,6 +116,7 @@ export default class UploadImage extends Component {
               ""
             )}
           </div>
+          {/* Display the below data only when the file is uploaded successfully */}
           {isUploadSuccessfull ? (
             <div>
               <div className="form-group">
