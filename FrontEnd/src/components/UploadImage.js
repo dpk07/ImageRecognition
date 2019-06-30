@@ -78,6 +78,11 @@ export default class UploadImage extends Component {
     const { isUploadSuccessfull, isUploaded } = this.state;
     return (
       <div className="container">
+        <div className="jumbotron">
+          <h1 className="">Object Detection</h1>
+          <p>Upload a JPG/PNG image to detect objects in your image.</p>
+        </div>
+
         <form>
           <div className="form-group">
             <label htmlFor="exampleFormControlFile1">Upload your image</label>
